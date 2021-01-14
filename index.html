@@ -8,19 +8,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
 </head>
 <body>
 	<nav class="menu">
 		<ul>
 			<span>
+				<a href="index.html">
 				<img src="img/solsis.png" alt="">
 				<li>Solsis</li>
+				</a>
 			</span>
-			<a href="#inicio"><li>Inicio</li></a>
-			<a href="#servicios"><li>Servicios</li></a>
-			<a href="#contactanos"><li>Contactanos</li></a>
-			<a href="#mas"><li>Más...</li></a>
+			
+			<a data-scroll href="#inicio"><li>Inicio</li></a>
+			<a data-scroll href="#servicios"><li>Servicios</li></a>
+			<a data-scroll href="#contactanos"><li>Contactanos</li></a>
+			<a data-scroll href="#mas"><li>Más...</li></a>
 		</ul>
 	</nav>
 
@@ -63,14 +67,16 @@
 		<div class="container">
 			<div class="row ">
 				<div class="col-sm-4  d-flex flex-column align-items-start p-md-3">
-					<a href="#" class="links_footer">Inicio</a>
+					<a href="#inicio" class="links_footer">Inicio</a>
 					<a href="#" class="links_footer">Servicios</a>
 					<a href="#" class="links_footer">Contactanos</a>
 					<a href="#" class="links_footer">Nosotros</a>
 					<a href="#" class="links_footer">Demos</a>
 				</div>
-				<div class="col-sm-4  d-flex flex-column align-items-center">
-					dfad
+				<div class="col-sm-4  d-flex flex-column align-items-center p-md-3">
+					
+					<i class="fa fa-envelope iconos_footer"><a href="mailto:solsisgt@gmail.com">solsisgt@gmail.com</a></i>
+
 				</div>
 				<div class="col-sm-4  d-flex flex-column align-items-end">
 					dfad
@@ -81,4 +87,5 @@
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
 </html>

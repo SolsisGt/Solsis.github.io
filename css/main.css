@@ -286,12 +286,16 @@ footer {
 
 a {
   text-decoration: none;
-  color: #004a9d;
+  color: rgba(255, 255, 255, 0.4);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .links_footer:hover {
   color: #ff9e01;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.iconos_footer {
+  padding-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
