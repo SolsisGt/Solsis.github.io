@@ -39,7 +39,12 @@ body {
 }
 
 .menu ul a li:active {
-  font-size: 0.8rem;
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+.menu ul img {
+  width: 2rem;
 }
 
 .slide {
