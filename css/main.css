@@ -238,4 +238,8 @@ body {
     right: 50%;
   }
 }
+
+main {
+  background-color: rgba(0, 19, 41, 0.99);
+}
 /*# sourceMappingURL=main.css.map */
