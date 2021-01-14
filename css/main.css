@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 15px;
+          box-shadow: 0px 0px 15px;
+}
+
+.menu ul {
+  background-color: #004a9d;
+}
+
+.menu ul li {
+  color: #d1d1d1;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.slide {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slide figure {
+  position: relative;
+  bottom: 0;
+  width: 400%;
+  margin: 0;
+  right: 0;
+  -webkit-animation: 16s slideImg infinite;
+          animation: 16s slideImg infinite;
+}
+
+.slide figure img {
+  width: 25%;
+  float: left;
+}
+
+@-webkit-keyframes slideImg {
+  0% {
+    right: 0;
+  }
+  25.33% {
+    right: 0;
+  }
+  33.33% {
+    right: 100%;
+  }
+  58.67% {
+    right: 100%;
+  }
+  66.67% {
+    right: 200%;
+  }
+  92% {
+    right: 200%;
+  }
+  100% {
+    right: 300%;
+  }
+}
+
+@keyframes slideImg {
+  0% {
+    right: 0;
+  }
+  25.33% {
+    right: 0;
+  }
+  33.33% {
+    right: 100%;
+  }
+  58.67% {
+    right: 100%;
+  }
+  66.67% {
+    right: 200%;
+  }
+  92% {
+    right: 200%;
+  }
+  100% {
+    right: 300%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
