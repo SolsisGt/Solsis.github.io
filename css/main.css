@@ -25,11 +25,21 @@ body {
   background-color: #004a9d;
 }
 
-.menu ul li {
+.menu ul a li {
   color: #d1d1d1;
   font-family: "Roboto", sans-serif;
   display: inline-block;
   padding: 1rem;
+  cursor: pointer;
+  font-size: 1.04rem;
+}
+
+.menu ul a li:hover {
+  background-color: #00397a;
+}
+
+.menu ul a li:active {
+  font-size: 0.8rem;
 }
 
 .slide {
@@ -42,17 +52,68 @@ body {
   bottom: 0;
   width: 400%;
   margin: 0;
-  right: 0;
-  -webkit-animation: 16s slideImg infinite;
-          animation: 16s slideImg infinite;
+  -webkit-animation: 12s slideImgs ease-in-out infinite;
+          animation: 12s slideImgs ease-in-out infinite;
+  overflow: hidden;
 }
 
-.slide figure img {
+.slide figure > img {
   width: 25%;
   float: left;
+  opacity: 0.8;
 }
 
-@-webkit-keyframes slideImg {
+.slide figure span {
+  margin: 1.4rem;
+  position: absolute;
+  bottom: 0;
+  width: 12%;
+}
+
+.slide figure .i1 {
+  left: 5%;
+  bottom: 100%;
+  -webkit-animation: 12s showTextI1 ease-in-out infinite;
+          animation: 12s showTextI1 ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.slide figure .i1 > img {
+  position: relative;
+  width: 100%;
+}
+
+.slide figure .i2 {
+  right: 50%;
+  top: 40%;
+  -webkit-animation: 12s showTextI2 ease-in-out infinite;
+          animation: 12s showTextI2 ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.slide figure .i2 > img {
+  position: relative;
+  width: 100%;
+}
+
+.slide figure .i3 {
+  left: 50%;
+  bottom: -100%;
+  -webkit-animation: 12s showTextsI3 ease-in-out infinite;
+          animation: 12s showTextsI3 ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.slide figure .i3 > img {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+@-webkit-keyframes slideImgs {
   0% {
     right: 0;
   }
@@ -76,7 +137,7 @@ body {
   }
 }
 
-@keyframes slideImg {
+@keyframes slideImgs {
   0% {
     right: 0;
   }
@@ -97,6 +158,84 @@ body {
   }
   100% {
     right: 300%;
+  }
+}
+
+@-webkit-keyframes showTextsI3 {
+  0% {
+    bottom: -100%;
+  }
+  55% {
+    bottom: -100%;
+  }
+  68% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes showTextsI3 {
+  0% {
+    bottom: -100%;
+  }
+  55% {
+    bottom: -100%;
+  }
+  68% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes showTextI1 {
+  5% {
+    bottom: 100%;
+  }
+  18% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+
+@keyframes showTextI1 {
+  5% {
+    bottom: 100%;
+  }
+  18% {
+    bottom: 20%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+
+@-webkit-keyframes showTextI2 {
+  25% {
+    right: 30%;
+  }
+  38% {
+    right: 50%;
+  }
+  100% {
+    right: 50%;
+  }
+}
+
+@keyframes showTextI2 {
+  25% {
+    right: 30%;
+  }
+  38% {
+    right: 50%;
+  }
+  100% {
+    right: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */

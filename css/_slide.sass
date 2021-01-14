@@ -6,12 +6,45 @@
         bottom: 0
         width: 400%
         margin: 0
-        right: 0
-        animation: 16s slideImg infinite
-        img
+        animation: 12s slideImgs ease-in-out infinite
+        overflow: hidden
+        >img
             width: 25%
             float: left
-@keyframes slideImg
+            opacity: 0.8
+        span
+            margin: 1.4rem
+            position: absolute
+            bottom: 0
+            width: 12%
+        .i1
+            left: 5%
+            bottom: 100%
+            animation: 12s showTextI1 ease-in-out infinite
+            animation-fill-mode: forwards
+            >img
+                position: relative
+                width: 100%
+        .i2
+            right: 50%
+            top: 40%
+            animation: 12s showTextI2 ease-in-out infinite
+            animation-fill-mode: forwards
+            >img
+                position: relative
+                width: 100%
+        .i3
+            left: 50%
+            bottom: -100%
+            animation: 12s showTextsI3 ease-in-out infinite
+            animation-fill-mode: forwards
+            >img
+                bottom: 0
+                position: relative
+                width: 100%
+        
+
+@keyframes slideImgs
     0%
         right: 0
     25.33%
@@ -26,3 +59,26 @@
         right: 200%
     100%
         right: 300%
+@keyframes showTextsI3
+    0%
+        bottom: -100%
+    55%
+        bottom: -100%
+    68%
+        bottom: 0
+    100%
+        bottom: 0
+@keyframes showTextI1
+    5%
+        bottom: 100%
+    18%
+        bottom: 20%
+    100%
+        bottom: 20%
+@keyframes showTextI2
+    25%
+        right: 30%
+    38%
+        right: 50%
+    100%
+        right: 50% 
