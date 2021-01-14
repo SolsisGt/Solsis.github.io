@@ -1,0 +1,23 @@
+{
+  "name": "solsis",
+  "version": "1.0.0",
+  "description": "pagina web solsis",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolsisGt/Solsis.git"
+  },
+  "author": "solsis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SolsisGt/Solsis/issues"
+  },
+  "homepage": "https://github.com/SolsisGt/Solsis#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

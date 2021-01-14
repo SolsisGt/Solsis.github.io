@@ -25,6 +25,34 @@ body {
   background-color: #004a9d;
 }
 
+.menu ul span {
+  height: 100%;
+  position: absolute;
+  background-color: #0c3e77;
+  left: 0;
+  padding-right: 1rem;
+}
+
+.menu ul span > li {
+  display: inline-block;
+  color: #c4c4c4;
+  font-size: 1.1rem;
+  letter-spacing: 2.5px;
+  font-family: "Roboto", sans-serif;
+  border-left: 2px #a5a5a5 solid;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.menu ul span img {
+  cursor: pointer;
+  width: 1.9rem;
+  position: relative;
+  top: 8px;
+  left: 10px;
+  margin-right: 1.5rem;
+}
+
 .menu ul a li {
   color: #d1d1d1;
   font-family: "Roboto", sans-serif;
@@ -32,6 +60,8 @@ body {
   padding: 1rem;
   cursor: pointer;
   font-size: 1.065rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .menu ul a li:hover {
@@ -39,15 +69,13 @@ body {
 }
 
 .menu ul a li:active {
-  -webkit-transform: scale(0.8, 0.8);
-          transform: scale(0.8, 0.8);
+  border-radius: 10px;
+  -webkit-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
 }
 
-.menu ul img {
-  width: 1.9rem;
-  float: left;
-  font-size: 18px;
-  line-height: 20px;
+.menu ul:first-child {
+  padding-left: 9.5rem;
 }
 
 .slide {
@@ -245,5 +273,9 @@ body {
   100% {
     right: 50%;
   }
+}
+
+main {
+  background-color: rgba(0, 19, 41, 0.99);
 }
 /*# sourceMappingURL=main.css.map */
