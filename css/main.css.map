@@ -7,7 +7,8 @@
         "_general.sass",
         "_navbar.sass",
         "_slide.sass",
-        "_inicio.sass"
+        "_inicio.sass",
+        "_footer.sass"
     ],
     "names": [],
     "file": "main.css"
