@@ -23,6 +23,7 @@ body {
 
 .menu ul {
   background-color: #004a9d;
+  overflow: hidden;
 }
 
 .menu ul span {
@@ -53,9 +54,9 @@ body {
 }
 
 .menu ul a li {
-  color: #d1d1d1;
-  font-family: "Roboto", sans-serif;
   display: inline-block;
+  font-family: "Roboto", sans-serif;
+  color: #d1d1d1;
   padding: 1rem;
   cursor: pointer;
   font-size: 1.065rem;
@@ -71,6 +72,60 @@ body {
   border-radius: 10px;
   -webkit-transform: scale(0.5, 0.5);
           transform: scale(0.5, 0.5);
+}
+
+.menu ul .dropdown {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  color: #d1d1d1;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.065rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.menu ul .dropdown:hover {
+  background-color: #00397a;
+}
+
+.menu ul .dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.menu ul .dropdown:active {
+  border-radius: 10px;
+  -webkit-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
+}
+
+.menu ul .dropdown .dropdownContent {
+  top: 3.22rem;
+  left: 28.5rem;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 57, 122, 0.95);
+  min-width: 130px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu ul .dropdown .dropdownContent a {
+  font-family: "Roboto", sans-serif;
+  color: #d1d1d1;
+  padding: 12px 16px;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.menu ul .dropdown .dropdownContent a:hover {
+  background-color: #ff9e01;
+  color: #001329;
 }
 
 .menu ul:first-child {
