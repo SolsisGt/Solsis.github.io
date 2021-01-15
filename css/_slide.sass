@@ -1,7 +1,17 @@
 .slide
-    height: 100%
     width: 100%
     overflow: hidden
+    .flecha
+        font-size: 10vw
+        position: absolute
+        z-index: 3
+        color: rgba($black, 0.4)
+        left: 50%
+        margin-left: -5vw
+        animation: 1.6s moveArrow ease-in infinite
+        i
+            position: relative
+            width: 100%
     figure
         position: relative
         bottom: 0
@@ -82,4 +92,12 @@
     38%
         right: 50%
     100%
-        right: 50% 
+        right: 50%
+@keyframes moveArrow
+    0%
+        transform: translatey(0%)
+    50%
+        transform: translatey(25%)
+    100%
+        transform: translatey(0%)
+        
