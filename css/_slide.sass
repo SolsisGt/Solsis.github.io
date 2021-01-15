@@ -8,7 +8,7 @@
         color: rgba($black, 0.4)
         left: 50%
         margin-left: -5vw
-        animation: 1.6s moveArrow ease-in infinite
+        animation: 1.6s moveArrow ease-in 12s infinite, 12s opacity ease-in 1
         i
             position: relative
             width: 100%
@@ -100,4 +100,10 @@
         transform: translatey(25%)
     100%
         transform: translatey(0%)
-        
+@keyframes opacity
+    0%
+        color: rgba($black, 0.0)
+    50%
+        color: rgba($black, 0.2)
+    100%
+        color: rgba($black, 0.4)

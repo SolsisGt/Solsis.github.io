@@ -53,7 +53,12 @@ body {
   margin-right: 1.5rem;
 }
 
-.menu ul a li {
+.menu ul .navbarSm {
+  display: inline-block;
+  padding-left: 9.5rem;
+}
+
+.menu ul .navbarSm a li {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
@@ -64,11 +69,11 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.menu ul a li:hover {
+.menu ul .navbarSm a li:hover {
   background-color: #00397a;
 }
 
-.menu ul a li:active {
+.menu ul .navbarSm a li:active {
   border-radius: 10px;
   -webkit-transform: scale(0.5, 0.5);
           transform: scale(0.5, 0.5);
@@ -137,10 +142,6 @@ body {
   color: #001329;
 }
 
-.menu ul:first-child {
-  padding-left: 9.5rem;
-}
-
 .slide {
   width: 100%;
   overflow: hidden;
@@ -153,8 +154,8 @@ body {
   color: rgba(0, 19, 41, 0.4);
   left: 50%;
   margin-left: -5vw;
-  -webkit-animation: 1.6s moveArrow ease-in infinite;
-          animation: 1.6s moveArrow ease-in infinite;
+  -webkit-animation: 1.6s moveArrow ease-in 12s infinite, 12s opacity ease-in 1;
+          animation: 1.6s moveArrow ease-in 12s infinite, 12s opacity ease-in 1;
 }
 
 .slide .flecha i {
@@ -384,6 +385,30 @@ body {
   }
 }
 
+@-webkit-keyframes opacity {
+  0% {
+    color: rgba(0, 19, 41, 0);
+  }
+  50% {
+    color: rgba(0, 19, 41, 0.2);
+  }
+  100% {
+    color: rgba(0, 19, 41, 0.4);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    color: rgba(0, 19, 41, 0);
+  }
+  50% {
+    color: rgba(0, 19, 41, 0.2);
+  }
+  100% {
+    color: rgba(0, 19, 41, 0.4);
+  }
+}
+
 footer {
   background-color: #001329;
   color: #ffffff;
@@ -402,5 +427,45 @@ a {
 
 .iconos_footer {
   padding: 0px 10px 0px 0px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul .hamburguer {
+  float: right;
+}
+
+.menu ul .hamburguer i {
+  display: inline-block;
+  color: #d1d1d1;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu ul .hamburguer i:hover {
+  background-color: #00397a;
+}
+
+.menu ul .hamburguer i:active {
+  border-radius: 10px;
+  -webkit-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .hamburguer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #navbarSm {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

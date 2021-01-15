@@ -1,0 +1,23 @@
+.menu
+    ul
+        list-style-type: none
+        .hamburguer
+            float: right
+            i
+                display: inline-block
+                color: $gray
+                padding: 0.6rem 1rem 
+                cursor: pointer
+                font-size: 2rem
+                transition: all 0.5s ease-out
+                &:hover
+                    background-color: #00397a
+                &:active
+                    border-radius: 10px
+                    transform: scale(0.5,0.5)
+@media screen and (min-width: 768px )
+    .hamburguer
+        display: none
+@media only screen and ( max-width: 769px )
+    #navbarSm
+        display: none
