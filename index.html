@@ -11,15 +11,14 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-
+	
 </head>
-
 <body>
 	<nav class="menu">
 		<ul>
-			<span id="logo">
+			<span>
 				<img src="img/solsis.png" alt="">
-				<li>Solsis</li>
+				<li>Solsis</li>	
 			</span>
 			<div id="navbarSm" class="navbarSm">
 				<a href="#inicio"><li>Inicio</li></a>
@@ -32,31 +31,25 @@
 					</div>
 				</li>
 			</div>
-			<li class="hamburguer"><i class="fas fa-bars"></i></li>
-			<a href="#inicio">
-				<li>Inicio</li>
-			</a>
-			<a href="#servicios">
-				<li>Servicios</li>
-			</a>
-			<a href="#contactanos">
-				<li>Contactanos</li>
-			</a>
-			<li class="dropdown">Nosotros<i class="fas fa-angle-down"></i>
-				<div class="dropdownContent">
-					<a href="#">Integrantes</a>
-					<a href="#">Proyectos</a>
-				</div>
+			<li class="hamburguer"><i class="fas fa-bars"></i>
+				<ul>
+					<li><a href="#inicio"></a>Inicio</li>
+					<li><a href="#servicios"></a>Servicios</li>
+					<li><a href="#contactanos"></a>Contactanos</li>
+					<li class="dropdownH">Nosotros<i class="fas fa-angle-down"></i>
+						<div class="dropdownHContent">
+							<a href="#">Integrantes</a>
+							<a href="#">Proyectos</a>
+						</div>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</nav>
-<br>
-<br>
-	<div class="slide">
-		<div class="flecha">
-			<i class="fas fa-arrow-down"></i>
-		</div>
-
+	<div class="slide" id="slide">
+		<a href="#inicio" class="flecha" id="flecha">
+			<i  class="fas fa-arrow-down"></i>
+		</a>
 		<figure>
 			<img src="img/inicio1.jpg" alt="">
 			<img src="img/inicio2.jpg" alt="">
@@ -67,7 +60,7 @@
 			<span class="i2"><img src="img/i2.png" alt=""></span>
 		</figure>
 	</div>
-
+	
 	<main class="inicio" id="inicio">
 		<h1>Inicio</h1>
 		<img src="./img/solsis.png" src="logo" alt="">
@@ -110,10 +103,11 @@
 				pariatur accusamus omnis ipsa? Velit cupiditate molestiae, voluptatem eum excepturi, nam quibusdam optio
 				hic repellat consequatur repudiandae error culpa quasi et, eius nemo consectetur? Explicabo fugit rerum
 				hic? Dicta nostrum soluta cumque molestiae? Voluptatem commodi fugiat nesciunt neque nam reprehenderit
-				dolorum animi voluptatum repellat vero.</span>
+				dolorum animi voluptatum repellat vero.
+			</span>
 		</div>
 	</main>
-
+	
 	<div class="servicios" id="servicios">
 		<h1>Servicios</h1>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem eveniet provident recusandae
@@ -152,9 +146,10 @@
 			mollitia magni at, fugit harum quibusdam laudantium necessitatibus perspiciatis, recusandae impedit neque
 			aut deleniti! Rerum error aut tempora itaque provident incidunt molestiae vel quasi perspiciatis. Natus aut
 			quas libero iure, excepturi unde eligendi possimus nesciunt consectetur sequi animi qui quisquam tenetur
-			maxime beatae error saepe expedita impedit.</p>
+			maxime beatae error saepe expedita impedit.
+		</p>
 	</div>
-
+	
 	<div class="contactanos" id="contactanos">
 		<h1>Contactanos</h1>
 		<p>Sapiente magnam nemo consequuntur corrupti laudantium ab repudiandae molestiae aliquid. Ipsa, maxime? Fugiat
@@ -193,9 +188,10 @@
 			quaerat sunt exercitationem dolore. Natus quidem mollitia ab dignissimos harum. Similique saepe corrupti ea
 			eius? Reiciendis, iusto, sunt fugiat suscipit error unde obcaecati accusantium nobis hic aspernatur eveniet
 			in. Aperiam dolorum fugit cumque, atque magnam numquam magni ad possimus provident odit nemo, libero
-			excepturi minus officiis repellendus. Commodi iusto tenetur amet impedit optio?</p>
+			excepturi minus officiis repellendus. Commodi iusto tenetur amet impedit optio?
+		</p>
 	</div>
-
+	
 	<div class="mas" id="mas">
 		<h1>Más...</h1>
 		<p>Earum officia incidunt consectetur consequuntur quod iste necessitatibus, itaque nobis nulla voluptates
@@ -234,7 +230,8 @@
 			ea itaque? Molestias dolor quidem id nam voluptate repellat eum dolorum inventore, totam reprehenderit
 			tempora animi quos odio eligendi error corporis officiis accusantium dolore non illo itaque. Quos saepe
 			asperiores reprehenderit voluptatem nisi ipsa itaque, ab suscipit id quia perspiciatis obcaecati error
-			beatae iusto perferendis.</p>
+			beatae iusto perferendis.
+		</p>
 	</div>
 	<center>
 		<footer>
@@ -249,49 +246,49 @@
 						<a href="#" class="links_footer" data-mdb-animation-start="onHover">Demos</a>
 					</div>
 					<div class="col-sm-4  d-flex flex-column align-items-start p-md-4"
-						data-mdb-animation-start="onHover" id="contactos">
-						<h2 class="barra titulo_footer">Contacto</h2>
-						<i class="fa fa-envelope p-1"><a class="p-2 links_footer link_contacto"
-								data-mdb-animation-start="onHover"
-								href="mailto:solsisgt@gmail.com">solsisgt@gmail.com</a></i>
+					data-mdb-animation-start="onHover" id="contactos">
+					<h2 class="barra titulo_footer">Contacto</h2>
+					<i class="fa fa-envelope p-1"><a class="p-2 links_footer link_contacto"
+						data-mdb-animation-start="onHover"
+						href="mailto:solsisgt@gmail.com">solsisgt@gmail.com</a></i>
 						<i class="fa fa-mobile-alt p-1"><a class="p-2 links_footer link_contacto"
-								data-mdb-animation-start="onHover" href="tel:+50255116766">55116766</a></i>
-						<i class="fa fa-mobile-alt p-1"><a class="p-2 links_footer link_contacto"
+							data-mdb-animation-start="onHover" href="tel:+50255116766">55116766</a></i>
+							<i class="fa fa-mobile-alt p-1"><a class="p-2 links_footer link_contacto"
 								data-mdb-animation-start="onHover" href="tel:+50242431770">42431770</a></i>
-
+								
+							</div>
+							<div class="col-sm-4  d-flex flex-column align-items-center p-md-4" id="redes_sociales">
+								<h2 class="barra titulo_footer" style="margin-bottom: 20px;" >Nuestras Redes</h2>
+								<section class="circulo" style="background-color:#0f92f3 ;">
+									<a href="#" class=" links_footer p-2"><i class="fab fa-facebook-f"></i></a>
+								</section>
+								<section class="circulo" style="background-color: black;">
+									<a href="#" class="links_footer p-2"><i class="fab fa-github"></i></a>
+								</section>
+								<section class="circulo" style="background-color: #0a66c2;">
+									<a href="#" class=" links_footer p-2"><i class="fab fa-linkedin"></i></a>
+								</section>
+								<section class="circulo" style="background-color: #1da1f2;">
+									<a href="#" class=" links_footer p-2"><i class="fab fa-twitter"></i></a>
+								</section>
+								<section class="circulo" style="background-color:#bf4276 ;">
+									<a href="#" class="links_footer p-2"><i class="fab fa-instagram"></i></a>
+								</section>
+								<section class="circulo" style="background-color:red ;">
+									<a href="#" class="links_footer p-2"><i class="fab fa-google-plus"></i></a>
+								</section>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-4  d-flex flex-column align-items-center p-md-4" id="redes_sociales">
-						<h2 class="barra titulo_footer" style="margin-bottom: 20px;" >Nuestras Redes</h2>
-						<section class="circulo" style="background-color:#0f92f3 ;">
-							<a href="#" class=" links_footer p-2"><i class="fab fa-facebook-f"></i></a>
-						</section>
-						<section class="circulo" style="background-color: black;">
-							<a href="#" class="links_footer p-2"><i class="fab fa-github"></i></a>
-						</section>
-						<section class="circulo" style="background-color: #0a66c2;">
-							<a href="#" class=" links_footer p-2"><i class="fab fa-linkedin"></i></a>
-						</section>
-						<section class="circulo" style="background-color: #1da1f2;">
-							<a href="#" class=" links_footer p-2"><i class="fab fa-twitter"></i></a>
-						</section>
-						<section class="circulo" style="background-color:#bf4276 ;">
-							<a href="#" class="links_footer p-2"><i class="fab fa-instagram"></i></a>
-						</section>
-						<section class="circulo" style="background-color:red ;">
-							<a href="#" class="links_footer p-2"><i class="fab fa-google-plus"></i></a>
-						</section>
+					<div class="footer-copyright copyright text-center py-3 ">© 2021 Copyright:
+						<a href="http://solsis.ga"> solsis.ga</a>
 					</div>
-				</div>
-			</div>
-			<div class="footer-copyright copyright text-center py-3 ">© 2021 Copyright:
-				<a href="http://solsis.ga"> solsis.ga</a>
-			</div>
-		</footer>
-	</center>
-</body>
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="js/funcion.js"></script>
-<script src="js/scripts.js"></script>
-</html>
+				</footer>
+			</center>
+		</body>
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="js/funcion.js"></script>
+		<script src="js/scripts.js"></script>
+		</html>
