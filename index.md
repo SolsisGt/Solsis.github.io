@@ -30,10 +30,10 @@
 		</ul>
 	</nav>
 	
-	<div class="slide">
-		<div class="flecha">
+	<div class="slide" id="slide">
+		<a href="#inicio" class="flecha" id="flecha">
 			<i  class="fas fa-arrow-down"></i>
-		</div>
+		</a>
 		<figure>
 			<img src="img/inicio1.jpg" alt="">
 			<img src="img/inicio2.jpg" alt="">
@@ -67,7 +67,6 @@
 		<h1>Más...</h1>
 		<p>Earum officia incidunt consectetur consequuntur quod iste necessitatibus, itaque nobis nulla voluptates voluptatum. Iusto laborum ex ullam porro sapiente nemo neque, molestiae veniam voluptatibus quia, suscipit odit iure, sunt et nisi reiciendis repudiandae vitae non nam blanditiis impedit. Unde, cumque velit maiores, eum error reprehenderit saepe quae alias beatae facere optio. Expedita optio natus vel soluta maxime hic suscipit provident quia ipsum aspernatur fugit rerum a nulla pariatur, sapiente possimus accusamus nisi nobis nam neque repudiandae! Quibusdam blanditiis quidem cum eos voluptatum iure et molestias? Eaque quisquam, voluptatum officia molestiae, mollitia quibusdam maiores impedit, quo reprehenderit quasi quia soluta itaque nihil cum harum odit. Rem ullam doloremque deserunt ducimus iure corporis aut. Dolore rem aliquam cumque dignissimos porro quas voluptate, illo consequatur rerum distinctio id culpa. Rerum libero modi vitae commodi deleniti dolore blanditiis culpa impedit vel? Ullam quibusdam harum culpa distinctio eligendi debitis dolorem quisquam, pariatur reiciendis non facilis corrupti, assumenda error excepturi repellendus, itaque ratione amet optio quaerat quas mollitia molestias ex quis! Quas, libero? Officiis asperiores inventore numquam iste nostrum illo nisi distinctio aliquid, quas nobis delectus tempore maxime vitae corrupti dolores repudiandae velit possimus sequi cumque harum qui totam? Assumenda cum, harum aut ipsa, molestias saepe quas dolores magni ab, quibusdam adipisci ratione fugit dolor corrupti impedit consequuntur commodi! A, sint voluptas sapiente rem alias rerum cumque? Architecto distinctio ea ipsam sed provident placeat perspiciatis est odio illo iusto? Nemo quibusdam ducimus quae neque doloremque dolores ex laudantium tempora culpa voluptas commodi, eveniet dolorum incidunt modi atque repellat officiis maxime eum deleniti. Nemo adipisci maiores fuga laborum pariatur numquam, asperiores deserunt suscipit ipsa minus nulla delectus. Repudiandae impedit corrupti corporis delectus? Explicabo debitis blanditiis culpa, vitae, molestias ad consectetur quae suscipit quos voluptatibus nam accusamus ex qui! Quia et, similique quidem eos qui quis exercitationem quisquam repellat necessitatibus dicta doloribus veritatis facilis eius maiores tempore ipsam culpa, assumenda tempora reprehenderit voluptatem? Excepturi sapiente quibusdam maiores exercitationem voluptas corporis itaque obcaecati repellendus fuga harum assumenda, numquam facilis nostrum libero voluptatem atque, deleniti quae laudantium alias ab dicta tempore repellat vitae? Accusantium vero totam quasi ut iure cum eum fugiat dolorem, eligendi velit impedit ullam molestiae labore quam ipsa corrupti facilis similique. Nemo, blanditiis sapiente optio iste voluptate fuga amet in dolorem ipsa rerum aliquam impedit, possimus aperiam pariatur, quisquam dolores dolorum praesentium sunt provident ab cupiditate nesciunt. Quaerat placeat perspiciatis consequuntur sapiente quo! Quia molestiae doloremque exercitationem possimus in eveniet perspiciatis, totam maxime fugit sint repudiandae alias consectetur earum laboriosam voluptatibus magni architecto et, cumque, rem est fuga. Repellendus aspernatur cumque animi voluptas adipisci, tempora fuga maiores ullam temporibus est velit. Enim, voluptatibus? Sint, eos eveniet. Fuga quasi cumque qui quisquam, voluptas eveniet, neque aspernatur unde ipsam iste, exercitationem minus molestias esse ea itaque? Molestias dolor quidem id nam voluptate repellat eum dolorum inventore, totam reprehenderit tempora animi quos odio eligendi error corporis officiis accusantium dolore non illo itaque. Quos saepe asperiores reprehenderit voluptatem nisi ipsa itaque, ab suscipit id quia perspiciatis obcaecati error beatae iusto perferendis.</p>
 	</div>
-<center>
 	<footer>
 		<div class="container">
 			<div class="row ">
@@ -84,19 +83,12 @@
 				<i class="fa fa-envelope p-2"><a  class="p-3 links_footer" href="mailto:solsisgt@gmail.com" >solsisgt@gmail.com</a></i>
 				<i class="fa fa-mobile-alt p-1"><a class="p-2 links_footer" href="tel:+50255116766">55116766</a></i>
 				<i class="fa fa-mobile-alt p-1"><a class="p-2 links_footer" href="tel:+50242431770">42431770</a></i>
-<<<<<<< HEAD
-=======
 				<i><a href=""><p></p></a></i>
 				<i><a href=""><p></p></a></i>	
 					
 					
-<<<<<<< HEAD
-					<i class="fa fa-envelope iconos_footer"><a href="mailto:solsisgt@gmail.com">solsisgt@gmail.com</a></i>
-					
-=======
 
->>>>>>> 7f516521cc2cfaffca85f073f57fda0bd6c22f03
->>>>>>> 9590be1ed0b5f5dd6350d05eeb8a8461b519c809
+					<i class="fa fa-envelope iconos_footer"><a href="mailto:solsisgt@gmail.com">solsisgt@gmail.com</a></i>
 				</div>
 				<div class="col-sm-4  d-flex flex-column align-items-end" id="redes_sociales">
 					<i class="fab fa-facebook-f"><a href="#"><p>Facebook</p></a></i>
@@ -114,4 +106,5 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="js/funcion.js"></script>
+<script src="js/scripts.js"></script>
 </html>
