@@ -1,7 +1,7 @@
 $(document).ready(function(){
     console.log("jquey is working");
     let flag =false;
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         flag=true
     }
     if (flag==true){
