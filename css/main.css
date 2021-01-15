@@ -16,7 +16,7 @@ body {
 .menu {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   -webkit-box-shadow: 0px 0px 15px;
           box-shadow: 0px 0px 15px;
 }
@@ -29,7 +29,7 @@ body {
 .menu ul span {
   height: 100%;
   position: absolute;
-  background-color: #00397a;
+  background-color: #004a9d;
   left: 0;
   padding-right: 1rem;
   cursor: pointer;
@@ -491,20 +491,26 @@ footer a {
 }
 
 .menu ul .hamburguer ul {
+  display: none;
   list-style-type: none;
   position: absolute;
-  background-color: #00397a;
+  background-color: #004a9d;
   overflow: hidden;
   left: 0;
   width: 100%;
-  -webkit-box-shadow: 0px 10px 10px 2px #001329;
-          box-shadow: 0px 10px 10px 2px #001329;
+  -webkit-box-shadow: 0px 10px 20px -3px #001329;
+          box-shadow: 0px 10px 20px -3px #001329;
   z-index: 10;
+  border-top: 0.25px #517daf solid;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .menu ul .hamburguer ul li {
+  font-size: 1.15rem;
   cursor: pointer;
-  padding: 1rem;
+  margin: 0.2rem;
+  padding: 0.8rem;
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
   text-align: center;
@@ -515,7 +521,19 @@ footer a {
 }
 
 .menu ul .hamburguer ul li i {
-  padding-left: 0.7rem;
+  padding-left: 0.4rem;
+  position: relative;
+  top: 0.1rem;
+  font-size: 1.2rem;
+  color: #d1d1d1;
+}
+
+.menu ul .hamburguer ul li:hover {
+  background-color: #00397a;
+}
+
+.menu ul .hamburguer ul li:last-child {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {

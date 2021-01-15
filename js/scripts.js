@@ -9,4 +9,23 @@ var posicionarFlecha = function(){
     const newTop = alturaInicio - flecha.offsetHeight - 50;
     flecha.style.top = newTop + "px";
 }
-posicionarFlecha();
+posicionarFlecha(); 
+
+
+//Abrir el menú de la hamburguesa
+//Variables
+const hamburguer = document.getElementById('hamburguerIcon');
+const menuHamburguer = document.getElementById('menuHamburguer');
+var hamburguerYesNo = true;
+//funcion
+var abrirMenu = function(){
+    if (hamburguerYesNo) {
+        menuHamburguer.style.display = "block";
+        hamburguerYesNo = false;
+    } else {
+        menuHamburguer.style.display = "none";
+        hamburguerYesNo = true;
+    }
+}
+//Evento
+hamburguer.addEventListener('click', abrirMenu);

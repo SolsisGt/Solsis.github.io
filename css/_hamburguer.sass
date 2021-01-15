@@ -16,24 +16,37 @@
                     border-radius: 10px
                     transform: scale(0.5,0.5)
             ul
+                display: none
                 list-style-type: none
                 position: absolute
-                background-color: #00397a
+                background-color: $blue
                 overflow: hidden
                 left: 0
                 width: 100% 
-                box-shadow: 0px 10px 10px 2px $black
+                box-shadow: 0px 10px 20px -3px $black
                 z-index: 10
+                border-top: 0.25px #517daf solid
+                transition: all 0.5s ease-out
                 li
+                    font-size: 1.15rem
                     cursor: pointer
-                    padding: 1rem
+                    margin: 0.2rem
+                    padding: 0.8rem
                     font-family: $font
                     color: $gray
                     text-align: center
                     a
                         display: none
                     i
-                        padding-left: 0.7rem
+                        padding-left: 0.4rem
+                        position: relative
+                        top: 0.1rem
+                        font-size: 1.2rem
+                        color: $gray
+                    &:hover
+                        background-color: $darkBlue
+                    &:last-child
+                        margin-bottom: 1rem
 @media screen and (min-width: 768px )
     .hamburguer
         display: none
