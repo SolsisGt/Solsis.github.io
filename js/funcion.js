@@ -8,15 +8,13 @@ $(document).ready(function(){
         console.log('Esto es un dispositivo móvil');
         $("#menu").removeClass("align-items-start");
         $("#menu").addClass("align-items-center");
-        $("#redes_sociales").removeClass("align-items-end");
+        $("#redes_sociales").removeClass("align-items-start");
         $("#redes_sociales").addClass("align-items-center");
-    }else{
-        console.log('Esto es una pc');
-        $("#menu").removeClass("align-items-center");
-        $("#menu").addClass("align-items-start");
-        $("#redes_sociales").removeClass("align-items-center");
-        $("#redes_sociales").addClass("align-items-end");
-        
+        $("#contactos").removeClass("align-items-start");
+        $("#contactos").addClass("align-items-center");
     }
+    $("#logo").click(function(){
+        window.location="./index.html";
+	});
        
 });

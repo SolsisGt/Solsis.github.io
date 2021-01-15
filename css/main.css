@@ -350,12 +350,35 @@ a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.links_footer {
+  line-height: 50px;
+  text-shadow: 8px 8px 8px black;
+}
+
 .links_footer:hover {
   color: #ff9e01;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .iconos_footer {
-  padding: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.copyright {
+  background-color: rgba(0, 74, 157, 0.3);
+}
+
+.barra {
+  border-left: #ff9e01 3px solid;
+}
+
+.titulo_footer {
+  font-family: arial;
+}
+
+.circulo {
+  border-radius: 100%;
+  width: 50px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */
