@@ -142,9 +142,24 @@ body {
 }
 
 .slide {
-  height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+.slide .flecha {
+  font-size: 10vw;
+  position: absolute;
+  z-index: 3;
+  color: rgba(0, 19, 41, 0.4);
+  left: 50%;
+  margin-left: -5vw;
+  -webkit-animation: 1.6s moveArrow ease-in infinite;
+          animation: 1.6s moveArrow ease-in infinite;
+}
+
+.slide .flecha i {
+  position: relative;
+  width: 100%;
 }
 
 .slide figure {
@@ -336,6 +351,36 @@ body {
   }
   100% {
     right: 50%;
+  }
+}
+
+@-webkit-keyframes moveArrow {
+  0% {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+  }
+  50% {
+    -webkit-transform: translatey(25%);
+            transform: translatey(25%);
+  }
+  100% {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+  }
+  50% {
+    -webkit-transform: translatey(25%);
+            transform: translatey(25%);
+  }
+  100% {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
   }
 }
 
