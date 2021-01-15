@@ -339,22 +339,6 @@ body {
   }
 }
 
-main {
-  width: 100%;
-  height: auto;
-}
-
-main i {
-  font-size: 5rem;
-  position: relative;
-  display: inline-block;
-  top: -8rem;
-}
-
-main h1 {
-  display: inline-block;
-}
-
 footer {
   background-color: #001329;
   color: #ffffff;
