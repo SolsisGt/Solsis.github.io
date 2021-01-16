@@ -83,7 +83,7 @@ body {
           transform: scale(0.5, 0.5);
 }
 
-.menuNav ul .dropdown {
+.menuNav ul .dropdown_nosotros {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
@@ -94,30 +94,30 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.menuNav ul .dropdown:hover {
+.menuNav ul .dropdown_nosotros:hover {
   background-color: #00397a;
 }
 
-.menuNav ul .dropdown:hover .dropdownContent {
+.menuNav ul .dropdown_nosotros:hover .dropdownContent {
   display: block;
 }
 
-.menuNav ul .dropdown:active {
+.menuNav ul .dropdown_nosotros:active {
   background-color: #00397a;
 }
 
-.menuNav ul .dropdown:active .dropdownContent {
+.menuNav ul .dropdown_nosotros:active .dropdownContent {
   display: block;
 }
 
-.menuNav ul .dropdown i {
+.menuNav ul .dropdown_nosotros i {
   font-size: 1.3rem;
   position: relative;
   top: 0.2rem;
   margin-left: 0.3rem;
 }
 
-.menuNav ul .dropdown .dropdownContent {
+.menuNav ul .dropdown_nosotros .dropdownContent {
   top: 3.22rem;
   left: 28.8rem;
   display: none;
@@ -131,7 +131,7 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.menuNav ul .dropdown .dropdownContent a {
+.menuNav ul .dropdown_nosotros .dropdownContent a {
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
   padding: 12px 16px;
@@ -141,7 +141,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.menuNav ul .dropdown .dropdownContent a:hover {
+.menuNav ul .dropdown_nosotros .dropdownContent a:hover {
   background-color: #ff9e01;
   color: #001329;
 }
