@@ -1,5 +1,4 @@
 .menu
-    line-height: 1
     position: fixed
     width: 100%
     z-index: 100
@@ -32,11 +31,11 @@
             display: inline-block
             a
                 text-decoration: none
-                li
-                    display: inline-block
-                    font-family: $font
+                >li
                     color: $gray
+                    font-family: $font
                     padding: 1rem
+                    display: inline-block
                     cursor: pointer
                     font-size: 1.065rem
                     transition: all 0.5s ease-out
@@ -47,7 +46,7 @@
                         transform: scale(0.5,0.5)
             &:first-child
             padding-left: 9.5rem
-        .dropdown
+        .botonDesplegable
             display: inline-block
             font-family: $font
             color: $gray
@@ -57,18 +56,18 @@
             transition: all 0.3s ease-out
             &:hover
                 background-color: $darkBlue
-                .dropdownContent
+                .botonDesplegableContent
                     display: block
             &:active
                 background-color: $darkBlue
-                .dropdownContent
+                .botonDesplegableContent
                     display: block
             i
                 font-size: 1.3rem
                 position: relative
                 top: 0.2rem
                 margin-left: 0.3rem
-            .dropdownContent
+            .botonDesplegableContent
                 top: 3.22rem
                 left: 28.8rem
                 display: none

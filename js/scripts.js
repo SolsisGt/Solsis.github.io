@@ -29,3 +29,30 @@ var abrirMenu = function(){
 }
 //Evento
 hamburguer.addEventListener('click', abrirMenu);
+
+
+// // Al apachar en el body excepto el menu cerrar el menu
+
+// Crear Variables
+var body = document.getElementById('body');
+
+// Agregar funciones
+body.addEventListener("click", function () {
+    cerrarNav();
+}, false);
+
+hamburguer.addEventListener("click", function (ev) {
+    ev.stopPropagation();
+}, false);
+
+// Crear funciones
+var cerrarNav = function () {
+    menuHamburguer.style.display = "none";
+    hamburguerYesNo = true;
+}
+
+
+
+// // Al hacer scroll eliminar el menu responsivo
+// Agregar evento
+window.addEventListener('scroll', cerrarNav)

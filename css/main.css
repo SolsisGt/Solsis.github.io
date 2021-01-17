@@ -13,12 +13,7 @@ body {
   font-size: 16px;
 }
 
-a {
-  line-height: 1;
-}
-
 .menu {
-  line-height: 1;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -67,28 +62,28 @@ a {
   text-decoration: none;
 }
 
-.menu ul .navbarSm a li {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
+.menu ul .navbarSm a > li {
   color: #d1d1d1;
+  font-family: "Roboto", sans-serif;
   padding: 1rem;
+  display: inline-block;
   cursor: pointer;
   font-size: 1.065rem;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.menu ul .navbarSm a li:hover {
+.menu ul .navbarSm a > li:hover {
   background-color: #00397a;
 }
 
-.menu ul .navbarSm a li:active {
+.menu ul .navbarSm a > li:active {
   border-radius: 10px;
   -webkit-transform: scale(0.5, 0.5);
           transform: scale(0.5, 0.5);
 }
 
-.menu ul .dropdown {
+.menu ul .botonDesplegable {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
@@ -99,30 +94,30 @@ a {
   transition: all 0.3s ease-out;
 }
 
-.menu ul .dropdown:hover {
+.menu ul .botonDesplegable:hover {
   background-color: #00397a;
 }
 
-.menu ul .dropdown:hover .dropdownContent {
+.menu ul .botonDesplegable:hover .botonDesplegableContent {
   display: block;
 }
 
-.menu ul .dropdown:active {
+.menu ul .botonDesplegable:active {
   background-color: #00397a;
 }
 
-.menu ul .dropdown:active .dropdownContent {
+.menu ul .botonDesplegable:active .botonDesplegableContent {
   display: block;
 }
 
-.menu ul .dropdown i {
+.menu ul .botonDesplegable i {
   font-size: 1.3rem;
   position: relative;
   top: 0.2rem;
   margin-left: 0.3rem;
 }
 
-.menu ul .dropdown .dropdownContent {
+.menu ul .botonDesplegable .botonDesplegableContent {
   top: 3.22rem;
   left: 28.8rem;
   display: none;
@@ -136,7 +131,7 @@ a {
   transition: all 0.5s ease-out;
 }
 
-.menu ul .dropdown .dropdownContent a {
+.menu ul .botonDesplegable .botonDesplegableContent a {
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
   padding: 12px 16px;
@@ -146,7 +141,7 @@ a {
   transition: all 0.3s ease-out;
 }
 
-.menu ul .dropdown .dropdownContent a:hover {
+.menu ul .botonDesplegable .botonDesplegableContent a:hover {
   background-color: #ff9e01;
   color: #001329;
 }
@@ -515,7 +510,7 @@ footer a {
   font-size: 1.15rem;
   cursor: pointer;
   margin: 0.2rem;
-  padding: 0.8rem;
+  padding: 0.65rem;
   font-family: "Roboto", sans-serif;
   color: #d1d1d1;
   text-align: center;
