@@ -547,4 +547,13 @@ footer a {
     display: none;
   }
 }
+
+.btn_collapse {
+  width: 100%;
+}
+
+.posiscionamiento {
+  -webkit-transform: translate(-650px, 40px);
+          transform: translate(-650px, 40px);
+}
 /*# sourceMappingURL=main.css.map */
