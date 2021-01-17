@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta content="width=device-width, initial-scale=1" name="viewport" /> 	
-	<title>Document</title>
+	<title>Soluciones con Sistemas| Solsis</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 	
 </head>
 <body id="body">
@@ -24,7 +24,7 @@
 					<li>Solsis</li>	
 				</span>
 				<div id="navbarSm" class="navbarSm">
-					<a href="#inicio"><li>Inicio</li></a>
+					<a data-scroll href="#inicio"><li>Inicio</li></a>
 					<a href="#servicios"><li>Servicios</li></a>
 					<a href="#contactanos"><li>Contactanos</li></a>
 					<li class="botonDesplegable">Nosotros<i class="fas fa-angle-down"></i>
@@ -60,67 +60,76 @@
 			</figure>
 		</div>
 	</header>
+	<div class="container">
+		<h1>Empresa sobre desarrollo web guatemalteca (paginas web)</h1>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque deserunt aut perspiciatis officia cum eligendi unde ipsam voluptas facere inventore debitis quo repudiandae ex odit autem quisquam, repellendus neque cupiditate ab ullam? Quo dolor ea ad ratione officia accusantium cupiditate ullam aliquam fugiat. Consequatur quos, facilis maiores nesciunt reiciendis delectus aspernatur animi sapiente ut id nihil beatae officia non debitis ipsum! Saepe explicabo error numquam rerum voluptatem, necessitatibus sapiente sint, voluptates hic veniam voluptate? Est mollitia, voluptatem nisi odio commodi, a ipsam rem nemo sint maiores libero. Blanditiis numquam recusandae cumque omnis, pariatur repudiandae corrupti! Vel pariatur at unde, id corrupti doloremque recusandae cumque rerum aspernatur magni, ipsa mollitia quas dolorem laborum voluptatibus provident? Eveniet rerum deleniti iure id odio libero in, eos voluptatum doloribus temporibus eius tenetur omnis voluptas voluptate quam ipsam harum iusto architecto consequatur. Adipisci porro repellat, molestias dolore magni magnam perspiciatis molestiae eaque aperiam numquam, modi quisquam vitae temporibus dignissimos, praesentium quaerat earum ipsa dolores consequuntur vel quo est. Aliquam optio quis rem porro quos quae rerum nulla. Iste totam cumque blanditiis minus, distinctio quam non, accusantium neque officia aspernatur vitae quo sapiente corporis? Asperiores, ipsum repudiandae optio at maiores perferendis illum? Quibusdam eos ad voluptates?
+	</div>
 	<main class="inicio container" id="inicio">
-		<h2>Inicio</h2>
+		<!-- <h1>Inicio</h1> -->
 		<div class="row">
-			<div class="col-3">
-				<img src="./img/solsis.png" class="img-fluid" alt="">
+			<div class="col-3" >
+				<img src="./img/solsis.png" id="logo_inicio"class="img-fluid animated fade-in-left "  alt="">
 			</div>
 			<div class="col">
 				<div class="row">
-					<p>
-						<div class="col">
-							<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Mision" aria-expanded="false" aria-controls="multiCollapseExample2">Mision
-							</button>
-							<div class="collapse multi-collapse" id="Mision">
-								<p>
-									Poder ayudan a empresas a que perfeccionen la calidad de atención y publicidad con
-									sistemas y sitios
-									web innovadores.
-								</p>
-								
-							</div>
-							
+					<div class="col">
+						<div class="p-2">
+							<button class="btn btn-outline-primary btn-lg  btn_collapse" data-toggle="collapse"
+								data-target="#Mision" aria-expanded="false" aria-controls="Mision"  id="btn_mision"><i
+									class="fa fa-flag p-2"></i> Misión </button>
+						</div>
+						<div class=" collapse multi-collapse card" id="Mision">
+							<p class="text-white">
+							<h3>Misión <span class="oi oi-flag"></span></h3>
+							</p>
+							<p>
+								Poder ayudan a empresas a que perfeccionen la calidad de atención y publicidad con
+								sistemas y sitios
+								web innovadores.
+							</p>
+
 						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="row">
-						<p>
-							<div class="col"><button class="btn btn-primary" type="button" data-toggle="collapse"
-								data-target="#Vision" aria-expanded="false"
-								aria-controls="multiCollapseExample2">Mision</button>
-								<div class="collapse multi-collapse" id="Vision">
-									<p>
-										Poder ayudan a empresas a que perfeccionen la calidad de atención y publicidad con
-										sistemas y sitios
-										web innovadores.
-									</p>
-									
-								</div>
-								
+					<div class="col">
+						<div>
+							<div class="p-2">
+								<button class="btn btn-outline-danger btn-lg btn_collapse" data-toggle="collapse"
+									data-target="#Vision" aria-expanded="false" aria-controls="Vision"  id="btn_vision"> <i
+										class="fa fa-eye p-2"></i>
+									Vision </button>
+							</div>
+							<div class=" collapse multi-collapse card" id="Vision">
+								<p class="text-white">
+								<h3>Vision <span class="oi oi-flag"></span></h3>
+								</p>
+								<p>
+									Ser una empresa reconocida por la calidad en la produccion de sus proyectos
+									solicitados.
+								</p>
+								<br>
 							</div>
 						</div>
 					</div>
 					<div class="col">
-						<div class="row">
-							<p>
-								<div class="col"><button class="btn btn-primary" type="button" data-toggle="collapse"
-									data-target="#Objetivos" aria-expanded="false"
-									aria-controls="multiCollapseExample2">Mision</button>
-									<div class="collapse multi-collapse" id="Objetivos">
-										<p>
-											Poder ayudan a empresas a que perfeccionen la calidad de atención y publicidad con
-											sistemas y sitios
-											web innovadores.
-										</p>
-										
-									</div>
-									
-								</div>
-							</div>
+						<div class="p-2">
+							<button class="btn btn-outline-secondary btn-lg  btn_collapse" data-toggle="collapse"
+								data-target="#Objetivos" aria-expanded="false" aria-controls="Objetivos" id="btn_objetivos"><i
+									class="fa fa-bullseye p-2" ></i> Objetivos </button>
 						</div>
-					</main>
+						<div class=" collapse multi-collapse card" id="Objetivos">
+							<p class="text-white">
+							<h3>Objetivos <span class="oi oi-flag"></span></h3>
+							</p>
+							<p>
+								Ser la empresa número 1 en innovación de sistemas y poder ayudar a que personas graduadas
+								recientemente obtengan trabajo y eso genere experiencia.
+							</p>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
 					<div class="servicios" id="servicios">
 						<h2>Servicios</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem eveniet provident recusandae
@@ -348,4 +357,5 @@
 						<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 						<script src="js/funcion.js"></script>
 						<script src="js/scripts.js"></script>
+						<script src="js/smooth-scroll.min.js"></script>
 						</html>
