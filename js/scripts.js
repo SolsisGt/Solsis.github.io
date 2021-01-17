@@ -1,13 +1,19 @@
 // Posicionar arrow 
 // variables
-const slideImg = document.getElementById('slide');
-const flecha = document.getElementById('flecha');
-const inicio = document.getElementById('inicio');
+var slideImg = document.getElementById('slide'),
+flecha = document.getElementById('flecha'),
+inicio = document.getElementById('inicio'),
+alturaInicio = inicio.offsetTop,
+newTop = alturaInicio - flecha.offsetHeight*1.4
 // funcion
 var posicionarFlecha = function(){
-    const alturaInicio = inicio.offsetTop;
-    const newTop = alturaInicio - flecha.offsetHeight - 50;
-    flecha.style.top = newTop + "px";
+    setTimeout(function(){
+        alturaInicio = inicio.offsetTop;
+        newTop = alturaInicio - flecha.offsetHeight*1.4;
+        console.log("altura inicio: " + alturaInicio + " newTop: " + newTop + " flecha.offsetHeight: " + flecha.offsetHeight);
+        
+        flecha.style.top = newTop + "px";
+    }, 400);
 }
 posicionarFlecha(); 
 
@@ -20,11 +26,13 @@ var hamburguerYesNo = true;
 //funcion
 var abrirMenu = function(){
     if (hamburguerYesNo) {
-        menuHamburguer.style.display = "block";
         hamburguerYesNo = false;
+        gsap.to("#menuHamburguer", {
+            duration: 0.01,
+            height: 275
+        });
     } else {
-        menuHamburguer.style.display = "none";
-        hamburguerYesNo = true;
+        cerrarNav();
     }
 }
 //Evento
@@ -47,12 +55,44 @@ hamburguer.addEventListener("click", function (ev) {
 
 // Crear funciones
 var cerrarNav = function () {
-    menuHamburguer.style.display = "none";
     hamburguerYesNo = true;
+    gsap.to("#menuHamburguer", {
+        duration: 0.01,
+        height: 0
+    });
 }
 
 
 
 // // Al hacer scroll eliminar el menu responsivo
 // Agregar evento
-window.addEventListener('scroll', cerrarNav)
+window.addEventListener('scroll', cerrarNav);
+
+
+
+// // // Li del menu responsivo lleva al lugar que insica
+
+// // Crear variables
+var servicios = document.getElementById('servicios'),
+contactanos = document.getElementById('contactanos'),
+proyectos = document.getElementById('proyectos'),
+integrantes = document.getElementById('integrantes');
+
+// // Crear funciones
+var irLista = function() {
+    var nombre = this.innerHTML;
+    var gato = "#";
+    location.href = "#";
+    location.href = gato + nombre.toLowerCase();
+}
+// // Añadir eventos y funciones
+for (let i = 0; i < menuHamburguer.childElementCount; i++) {
+    menuHamburguer.children[i].addEventListener('click', irLista);
+}
+
+
+
+// // // Ubicar la flecha en su lugar cada vez que se cambie de tamaño a la pantalla
+
+// // Añadir eventos y funciones
+window.addEventListener("resize", posicionarFlecha);

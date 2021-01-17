@@ -491,7 +491,7 @@ footer a {
 }
 
 .menu ul .hamburguer ul {
-  display: none;
+  height: 0;
   list-style-type: none;
   position: absolute;
   background-color: #004a9d;
@@ -536,13 +536,13 @@ footer a {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .hamburguer {
     display: none;
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   #navbarSm {
     display: none;
   }
