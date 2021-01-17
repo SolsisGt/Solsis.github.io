@@ -14,7 +14,7 @@ $(document).ready(function(){
         $("#contactos").addClass("align-items-center");
     }
     $("#logo").click(function(){
-        window.location="./index.htmls";
+        window.location="./index.html";
 	});
        
 });
