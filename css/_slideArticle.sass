@@ -1,0 +1,49 @@
+article
+    div
+        margin: 3rem
+        text-align: center
+        .slideArticle1
+            border-radius: 10px
+            width: 60%
+            min-width: 250px
+            z-index: 1
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+            transition: all 0.5s
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5)
+            animation: 2s space infinite
+        .slideArticle2
+            transition: all 1s
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5)
+            border-radius: 10px
+            position: absolute
+            width: 30%
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            z-index: -1
+            opacity: 0
+            &:hover
+                transform: translateY(-60%)
+                opacity: 1
+        .slideArticle3
+            transition: all 1s
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5)
+            border-radius: 10px
+            position: absolute
+            width: 30%
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            z-index: -1
+            opacity: 0
+            &:hover
+                transform: translateY(-60%) !important
+                opacity: 1 !important
+@keyframes space
+    0%
+        transform: translateY(0)   
+    50%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(0)
+        
