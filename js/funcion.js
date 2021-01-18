@@ -1,10 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function () {
     console.log("jquey is working");
-    let flag =false;
-    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        flag=true
+    let flag = false;
+    let btn_click = false;
+    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        flag = true
     }
-    if (flag==true){
+    if (flag == true) {
         console.log('Esto es un dispositivo móvil');
         $("#menu").removeClass("align-items-start");
         $("#menu").addClass("align-items-center");
@@ -13,16 +14,55 @@ $(document).ready(function(){
         $("#contactos").removeClass("align-items-start");
         $("#contactos").addClass("align-items-center");
     }
-    $("#logo").click(function(){
-        window.location="./index.html";
-	});
-       
+    $("#logo").click(function () {
+        window.location = "./index.html";
+    });
+    $('#btn_mision').on('click', function () {
+        if (btn_click == false) {
+            btn_click = true;
+            desplazamineto_logo();
+        }
+        $("#i_mision").removeAttr("hidden");
+        gsap.from("#i_mision", { duration: 2, opacity: 0 })
+        
+    });
+    $('#btn_vision').on('click', function () {
+        if (btn_click == false) {
+            btn_click = true;
+            desplazamineto_logo();
+        }
+        $("#i_vision").removeAttr("hidden");
+        gsap.from("#i_vision", { duration: 4, opacity: 0 })
+        
+    });
+    $('#btn_objetivos').on('click', function () {
+        if (btn_click == false) {
+            btn_click = true;
+            desplazamineto_logo();
+        }
+        $("#i_objetivos").removeAttr("hidden");
+        gsap.from("#i_objetivos", { duration: 2, opacity: 0 })
+        });
+    //     $(id_btn).on('click',function () {
+    //         console.log("Ckick me ");
+    //         $(id_icono).removeAttr("hidden");
+    //         gsap.from(id_icono, { duration: 2, opacity: 0 })
+    //     });
+    //     $(id_btn).on('click',function () {
+    //         console.log("Ckick me ");
+    //         $(id_icono).removeAttr("hidden");
+    //         gsap.from(id_icono, { duration: 2, opacity: 0 })
+    //     });
+    //     Animaciones_iconos("#btn_vision", "#i_vision");
+    //     Animaciones_iconos("#btn_objetivos","#i_objetivos");
+        
+        
 });
-smoothScroll.init({
-    selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
-    selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-    speed: 2000, // Integer. How fast to complete the scroll in milliseconds
-    easing: 'easeInOutCubic', // Easing pattern to use
-    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-    callback: function(anchor, toggle) {} // Function to run after scrolling
-});
+function desplazamineto_logo() {
+    gsap.to('#logo_inicio', {
+        duration: 1.5,
+        delay: 0.5,
+        x: 550,
+        rotation: 360
+    });
+}
