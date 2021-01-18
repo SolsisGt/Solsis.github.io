@@ -17,28 +17,46 @@ $(document).ready(function () {
     $("#logo").click(function () {
         window.location = "./index.html";
     });
-    $('#btn_mision').on('click',function(){
-        if (btn_click==false){  
-            btn_click=true;
+    $('#btn_mision').on('click', function () {
+        if (btn_click == false) {
+            btn_click = true;
             desplazamineto_logo();
         }
-
+        $("#i_mision").removeAttr("hidden");
+        gsap.from("#i_mision", { duration: 2, opacity: 0 })
+        
     });
-    $('#btn_vision').on('click',function(){
-        if (btn_click==false){  
-            btn_click=true;
+    $('#btn_vision').on('click', function () {
+        if (btn_click == false) {
+            btn_click = true;
             desplazamineto_logo();
         }
-
+        $("#i_vision").removeAttr("hidden");
+        gsap.from("#i_vision", { duration: 4, opacity: 0 })
+        
     });
-    $('#btn_objetivos').on('click',function(){
-        if (btn_click==false){  
-            btn_click=true;
+    $('#btn_objetivos').on('click', function () {
+        if (btn_click == false) {
+            btn_click = true;
             desplazamineto_logo();
         }
-
-    });
-
+        $("#i_objetivos").removeAttr("hidden");
+        gsap.from("#i_objetivos", { duration: 2, opacity: 0 })
+        });
+    //     $(id_btn).on('click',function () {
+    //         console.log("Ckick me ");
+    //         $(id_icono).removeAttr("hidden");
+    //         gsap.from(id_icono, { duration: 2, opacity: 0 })
+    //     });
+    //     $(id_btn).on('click',function () {
+    //         console.log("Ckick me ");
+    //         $(id_icono).removeAttr("hidden");
+    //         gsap.from(id_icono, { duration: 2, opacity: 0 })
+    //     });
+    //     Animaciones_iconos("#btn_vision", "#i_vision");
+    //     Animaciones_iconos("#btn_objetivos","#i_objetivos");
+        
+        
 });
 function desplazamineto_logo() {
     gsap.to('#logo_inicio', {
@@ -48,11 +66,3 @@ function desplazamineto_logo() {
         rotation: 360
     });
 }
-// .smoothScroll.init({
-//     selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
-//     selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
-//     speed: 2000, // Integer. How fast to complete the scroll in milliseconds
-//     easing: 'easeInOutCubic', // Easing pattern to use
-//     offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
-//     callback: function(anchor, toggle) {} // Function to run after scrolling
-// });
