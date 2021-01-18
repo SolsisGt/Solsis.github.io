@@ -13,6 +13,10 @@ body {
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .menu {
   position: fixed;
   width: 100%;
@@ -149,6 +153,7 @@ body {
 .slide {
   width: 100%;
   overflow: hidden;
+  padding-top: 51.2px;
 }
 
 .slide .flecha {
@@ -289,10 +294,10 @@ body {
     bottom: -100%;
   }
   68% {
-    bottom: 0;
+    bottom: 15%;
   }
   100% {
-    bottom: 0;
+    bottom: 15%;
   }
 }
 
@@ -304,10 +309,10 @@ body {
     bottom: -100%;
   }
   68% {
-    bottom: 0;
+    bottom: 15%;
   }
   100% {
-    bottom: 0;
+    bottom: 15%;
   }
 }
 

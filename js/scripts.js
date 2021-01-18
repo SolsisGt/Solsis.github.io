@@ -25,11 +25,12 @@ const menuHamburguer = document.getElementById('menuHamburguer');
 var hamburguerYesNo = true;
 //funcion
 var abrirMenu = function(){
+    var menuHeight = menuHamburguer.offsetHeight;
     if (hamburguerYesNo) {
         hamburguerYesNo = false;
         gsap.to("#menuHamburguer", {
             duration: 0.01,
-            height: 275
+            height: 325
         });
     } else {
         cerrarNav();
