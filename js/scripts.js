@@ -71,25 +71,25 @@ window.addEventListener('scroll', cerrarNav);
 
 
 
-// // // Li del menu responsivo lleva al lugar que insica
+// // // // Li del menu responsivo lleva al lugar que insica
 
-// // Crear variables
-var servicios = document.getElementById('servicios'),
-contactanos = document.getElementById('contactanos'),
-proyectos = document.getElementById('proyectos'),
-integrantes = document.getElementById('integrantes');
+// // // Crear variables
+// var servicios = document.getElementById('servicios'),
+// contactanos = document.getElementById('contactanos'),
+// proyectos = document.getElementById('proyectos'),
+// integrantes = document.getElementById('integrantes');
 
-// // Crear funciones
-var irLista = function() {
-    var nombre = this.innerHTML;
-    var gato = "#";
-    location.href = "#";
-    location.href = gato + nombre.toLowerCase();
-}
-// // Añadir eventos y funciones
-for (let i = 0; i < menuHamburguer.childElementCount; i++) {
-    menuHamburguer.children[i].addEventListener('click', irLista);
-}
+// // // Crear funciones
+// var irLista = function() {
+//     var nombre = this.innerHTML;
+//     var gato = "#";
+//     location.href = "#";
+//     location.href = gato + nombre.toLowerCase();
+// }
+// // // Añadir eventos y funciones
+// for (let i = 0; i < menuHamburguer.childElementCount; i++) {
+//     menuHamburguer.children[i].addEventListener('click', irLista);
+// }
 
 
 
