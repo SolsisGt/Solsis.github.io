@@ -638,7 +638,7 @@ a {
 }
 
 .btn_collapse {
-  width: 100%;
+  width: 90%;
 }
 
 .posiscionamiento {
@@ -679,6 +679,10 @@ a {
 .card-body {
   background-color: rgba(255, 255, 255, 0.1) !important;
   font-family: "Roboto", sans-serif !important;
+}
+
+.card {
+  width: 100% !important;
 }
 
 .text-poppins {
