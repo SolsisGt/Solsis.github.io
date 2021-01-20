@@ -703,6 +703,18 @@ a {
           transform: translateX(2%);
 }
 
+#filosofia {
+  -webkit-transform: translateX(-0.7%);
+          transform: translateX(-0.7%);
+}
+
+@media screen and (max-width: 736px) {
+  #filosofia {
+    -webkit-transform: translateX(-2%) !important;
+            transform: translateX(-2%) !important;
+  }
+}
+
 .text-poppins {
   font-family: 'Poppins', 'sans-serif';
   font-size: 20px;
