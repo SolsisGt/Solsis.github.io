@@ -51,6 +51,9 @@ $(document).ready(function () {
                 gsap.from("#i_valores", { duration: 2, opacity: 0 });
             }
            
+        });    
+        $('#btn1').on('click', function () {
+            alert("click");
         });
     
 });
