@@ -1,7 +1,10 @@
 $(document).ready(function () {
     console.log("jquey is working");
     let flag = false;
-    let btn_click = false;
+    let btn_click_mision = false;
+    let btn_click_vision = false;
+    let btn_click_objetivos = false;
+    let btn_click_valores = false;
     if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         flag = true
     }
@@ -18,51 +21,40 @@ $(document).ready(function () {
         window.location = "./index.html";
     });
     $('#btn_mision').on('click', function () {
-        if (btn_click == false) {
-            btn_click = true;
-            desplazamineto_logo();
+        if (btn_click_mision == false) {
+            btn_click_mision = true;
+            $("#i_mision").removeAttr("hidden");
+            gsap.from("#i_mision", { duration: 2, opacity: 0 });
         }
-        $("#i_mision").removeAttr("hidden");
-        gsap.from("#i_mision", { duration: 2, opacity: 0 })
         
     });
     $('#btn_vision').on('click', function () {
-        if (btn_click == false) {
-            btn_click = true;
-            desplazamineto_logo();
+        if (btn_click_vision == false) {
+            btn_click_vision = true;
+            $("#i_vision").removeAttr("hidden");
+            gsap.from("#i_vision", { duration: 2, opacity: 0 });
         }
-        $("#i_vision").removeAttr("hidden");
-        gsap.from("#i_vision", { duration: 4, opacity: 0 })
         
     });
     $('#btn_objetivos').on('click', function () {
-        if (btn_click == false) {
-            btn_click = true;
-            desplazamineto_logo();
+        if (btn_click_objetivos == false) {
+            btn_click_objetivos = true;
+            $("#i_objetivos").removeAttr("hidden");
+        gsap.from("#i_objetivos", { duration: 2, opacity: 0 });
         }
-        $("#i_objetivos").removeAttr("hidden");
-        gsap.from("#i_objetivos", { duration: 2, opacity: 0 })
+        
         });
-    //     $(id_btn).on('click',function () {
-    //         console.log("Ckick me ");
-    //         $(id_icono).removeAttr("hidden");
-    //         gsap.from(id_icono, { duration: 2, opacity: 0 })
-    //     });
-    //     $(id_btn).on('click',function () {
-    //         console.log("Ckick me ");
-    //         $(id_icono).removeAttr("hidden");
-    //         gsap.from(id_icono, { duration: 2, opacity: 0 })
-    //     });
-    //     Animaciones_iconos("#btn_vision", "#i_vision");
-    //     Animaciones_iconos("#btn_objetivos","#i_objetivos");
-        
-        
+        $('#btn_valores').on('click', function () {
+            if (btn_click_valores == false) {
+                btn_click_valores = true;
+                $("#i_valores").removeAttr("hidden");
+                gsap.from("#i_valores", { duration: 2, opacity: 0 });
+            }
+           
+        });    
+        $('#btn1').on('click', function () {
+            alert("click");
+        });
+    
 });
-function desplazamineto_logo() {
-    gsap.to('#logo_inicio', {
-        duration: 1.5,
-        delay: 0.5,
-        x: 550,
-        rotation: 360
-    });
-}
+
