@@ -55,6 +55,9 @@ $(document).ready(function () {
         $('#btn1').on('click', function () {
             alert("click");
         });
+        $('.card').hover(function(){
+            console.log("Hola me hoveriaste");
+        });
     
 });
 

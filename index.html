@@ -22,7 +22,7 @@
 	<header>
 		<nav class="menu">
 			<ul>
-				<span>
+				<span id="logo">
 					<img src="img/solsis.png" alt="">
 					<li>Solsis</li>
 				</span>
@@ -69,10 +69,10 @@
 				<i class="fas fa-arrow-down"></i>
 			</a>
 			<figure>
-				<img src="img/inicio1.jpg" alt="">
-				<img src="img/inicio2.jpg" alt="">
-				<img src="img/inicio3.jpg" alt="">
-				<img src="img/inicio1.jpg" alt="">
+				<img src="img/inicio1.png" alt="">
+				<img src="img/inicio2.png" alt="">
+				<img src="img/inicio3.png" alt="">
+				<img src="img/inicio1.png" alt="">
 				<span class="i1"><img src="img/i1.png" alt=""></span>
 				<span class="i3"><img src="img/i3.png" alt=""></span>
 				<span class="i2"><img src="img/i2.png" alt=""></span>
@@ -88,7 +88,7 @@
 				pequeñas y medianas empresas con tecnologías cómo: Páginas web, aplicaciones de escritorio, aplicaciones
 				de bases de datos y demás opciones disponibles con más detalle en la sección de "Servicios"</p>
 			<div>
-				<img src="img/meeting.jpg" alt="">
+				<img src="img/meeting.png" alt="">
 			</div>
 			<h2>¿En realidad necesitas una página web para tu empresa? <span><img src="img/emoji.png" alt=""></span>
 			</h2>
@@ -223,78 +223,136 @@
 
 				</div>
 		</center>
-
-		<div class="container">
-			<center>
-				<article>
-					<h2>Filosofía</h2>
-				</article>
-				<div class="d-flex flex-wrap">
-					<div class="card-columns">
-						<div class="card">
-							<img src="img/stonks.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title that wraps to a new line</h5>
-								<p class="card-text">This is a longer card with supporting text below as a natural
-									lead-in to additional content. This content is a little bit longer.</p>
-							</div>
-						</div>
-						<div class="card p-3">
-							<blockquote class="blockquote mb-0 card-body">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-								</p>
-								<footer class="blockquote-footer">
-									<small class="text-muted">
-										Someone famous in <cite title="Source Title">Source Title</cite>
-									</small>
-								</footer>
-							</blockquote>
-						</div>
-						<div class="card">
-							<img src="img/stonks.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This card has supporting text below as a natural lead-in to
-									additional content.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							</div>
-						</div>
-						<div class="card bg-primary text-white text-center p-3">
-							¿"  class="img_card"alt=""> garantizan una satisfaccion al cliente ya que se acoplan a sus necesidades y a su economia.</p>
-							</blockquote>
-						</div>
-						<div class="card text-center">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This card has a regular title and short paragraphy of text below
-									it.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="img/Banner.png" class="card-img-top" alt="...">
-						</div>
-						<div class="card p-3 text-right">
-							<blockquote class="blockquote mb-0">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-								</p>
-								<footer class="blockquote-footer">
-									<small class="text-muted">
-										Someone famous in <cite title="Source Title">Source Title</cite>
-									</small>
-								</footer>
-							</blockquote>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is another card with title and supporting text below. This
-									card has some additional content to make it slightly taller overall.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							</div>
-						</div>
+		<div class="container-fluid pt-lg-5" id="servicios">
+			<article>
+				<h2>
+					Servicios
+				</h2>
+			</article>
+			<div class="card-columns">
+				<div class="card">
+					<img src="img/Servicios/PW.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Páginas Web</h5>
+						<p class="card-text">
+							Realizamos páginas web para que puedas promocionar tu marca y tu empresa y asi poder elevar
+							tus ventas.
+						</p>
+						<button class="btn btn-outline-primary btn-md" data-toggle="modal" data-target="#modal_info">Más
+							información</button>
 					</div>
 				</div>
+				<div class="card p-3">
+					<img src="img/Servicios/pbd.png" class="card-img-top" alt="...">
+					<blockquote class="blockquote mb-0 card-body">
+						<h5 class="card-title">Programas de administracion de datos.</h5>
+						<p>Contamos con programas para controlar sus registros como inventarios, ventas e ingreso de
+							clientes.</p>
+						<footer class="blockquote-footer">
+							<small class="text-white">
+								Cuenta con soporte en horas habiles.
+							</small>
+						</footer>
+					</blockquote>
+					<button class="btn btn-outline-primary btn-md" data-toggle="modal" data-target="#modal_info">Más
+						información</button>
+				</div>
+				<div class="card">
+					<img src="img/Servicios/SW.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Sitios Web</h5>
+						<p class="card-text text-center">Programas web para control de inventarios para empresas con
+							sucursales en disitintos puntos.</p>
+					</div>
+					<button class="btn btn-outline-primary btn-md" data-toggle="modal" data-target="#modal_info">Más
+						información</button>
+				</div>
+				<div class="card text-white text-center p-3 d-none d-sm-none d-md-block bg-info">
+					<blockquote class="blockquote mb-0">
+						<p>Aseguramos la satisfaccion de nuestros clientes ya que los que contratan nuestos servicios
+							logran visualizar que el funcionamiento
+							de estos se acopla a su necesidad y a su economía.
+						</p>
+
+					</blockquote>
+				</div>
+				<div class="card text-center">
+					<img src="img/Servicios/progra.png" class="card-img-top" alt="">
+					<div class="card-body">
+						<h5 class="card-title">Soluciones informaticas</h5>
+						<p class="card-text">Solucionamos sus problemas informaticos con soluciones sistematizadas .</p>
+					</div>
+					<button class="btn btn-outline-primary btn-md" data-toggle="modal" data-target="#modal_info">Más
+						información</button>
+				</div>
+				<div class="card fondo_logo_card div-img d-none d-sm-none d-md-block" id="logo_servicios ">
+					<img src="img/solsis.png" class="card-img img" alt="...">
+				</div>
+				<div class="card p-3 text-right">
+					<img src="img/Servicios/tutorias.png" class="card-img-top" alt="...">
+					<blockquote class="blockquote mb-0 card-body">
+						<h5 class="card-title text-center">Tutorías.</h5>
+						<p>Contamos con tutorías para ayudar a personas que queiren introcucirse en el mundo de el la
+							programación.</p>
+					</blockquote>
+					<button class="btn btn-outline-primary btn-md" data-toggle="modal" data-target="#modal_info">Más
+						información</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal_info" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-row">
+								<div class=" form-group col-sm-6">
+									<label for="nombre">Nombre</label>
+									<input type="text" class="form-control" placeholder="Ingrese su Apellido" id="nombre">
+								</div>
+								<div class=" form-group col-sm-6">
+									<label for="Apellido">Apellido</label>
+									<input type="text" class="form-control" placeholder="Ingrese su Apellido" id="Apellido">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mail">Email</label>
+								<input class="form-control" type="email" name="mail" placeholder="Ingrese su email">
+							</div>
+							<div class="form-row">
+								<div class="form-group col">
+									<label for="Telefono">Teléfono </label>
+									<input type="text" class="form-control" id="telefono" placeholder="ingrese su número de teléfono">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="comentario">Escriba su duda.</label>
+								<textarea class="form-control" id="comentario"  rows="10"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="contactame">
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="gridChek">
+										<label for="gridchek" class="form-check-label">Quiero que me contactes</label>
+									</div>
+								</label>
+							</div>
+							
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-outline-primary">Enviar</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="integrantes" id="integrantes">
 			<h2>Más...</h2>
