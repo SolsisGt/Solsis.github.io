@@ -106,29 +106,12 @@ var comprobarVisibilidad = function() {
         var slideArticle = document.getElementById('slideArticle'),
         styleSlideArticle = window.getComputedStyle(slideArticle),
         opacitySlideArticle = styleSlideArticle.getPropertyValue('opacity');
-        if (opacitySlideArticle != "0") {
-            gsap.to(".slideArticle2", {
-                duration: 1,
-                opacity: 0.7
-            });
-            gsap.to(".slideArticle3", {
-                duration: 1,
-                opacity: 0.7
-            });
-            gsap.timeline()
-                .from(".slideArticle2",{delay: 5, x: 50, zindex: 2})
+        if (opacitySlideArticle != "0" ) {
+            document.getElementsByClassName("slideArticle2")[0].style.opacity = "0.7"
+            document.getElementsByClassName("slideArticle3")[0].style.opacity = "0.7"
+            console.log('visible');
+            
         }
-        else{
-            gsap.to(".slideArticle2", {
-                duration: 0.5,
-                opacity: 0
-            });
-            gsap.to(".slideArticle3", {
-                duration: 0.5,
-                opacity: 0
-            });
-        }
-        
     }, 900);
 }
 
@@ -137,4 +120,6 @@ window.addEventListener('scroll', comprobarVisibilidad);
 comprobarVisibilidad();
 
 
-
+function percentToPixel(inicio, _perc){
+    return (inicio.parent().outerWidth()/100)* parseFloat(_perc);
+  }
