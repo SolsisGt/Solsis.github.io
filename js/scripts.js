@@ -10,8 +10,6 @@ var posicionarFlecha = function(){
     setTimeout(function(){
         alturaInicio = inicio.offsetTop;
         newTop = alturaInicio - flecha.offsetHeight*1.4;
-        console.log("altura inicio: " + alturaInicio + " newTop: " + newTop + " flecha.offsetHeight: " + flecha.offsetHeight);
-        
         flecha.style.top = newTop + "px";
     }, 400);
 }
@@ -97,3 +95,31 @@ window.addEventListener('scroll', cerrarNav);
 
 // // Añadir eventos y funciones
 window.addEventListener("resize", posicionarFlecha);
+
+
+
+// // // Creacion del slide del article
+
+// // Crear funciones
+var comprobarVisibilidad = function() {
+    setTimeout(function(){
+        var slideArticle = document.getElementById('slideArticle'),
+        styleSlideArticle = window.getComputedStyle(slideArticle),
+        opacitySlideArticle = styleSlideArticle.getPropertyValue('opacity');
+        if (opacitySlideArticle != "0" ) {
+            document.getElementsByClassName("slideArticle2")[0].style.opacity = "0.7"
+            document.getElementsByClassName("slideArticle3")[0].style.opacity = "0.7"
+            console.log('visible');
+            
+        }
+    }, 900);
+}
+
+// // Añadir eventos y funciones
+window.addEventListener('scroll', comprobarVisibilidad);
+comprobarVisibilidad();
+
+
+function percentToPixel(inicio, _perc){
+    return (inicio.parent().outerWidth()/100)* parseFloat(_perc);
+  }

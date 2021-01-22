@@ -1,7 +1,9 @@
 article
     width: 100%
     overflow: hidden
-    background-color: rgba($black,0.975)
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, $black , #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, $black , #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-top: 57.6px
     h1
         margin: 1.5rem auto
@@ -44,11 +46,8 @@ article
             width: 2.2rem
             top: 8px
             position: relative
-    div
-        text-align: center
-        margin: 3rem
-        img
-            width: 55%
-            min-width: 375px
     .p2
         width: 70%
+
+
+    
