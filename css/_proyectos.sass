@@ -47,7 +47,7 @@
                 display: inline-block
                 transition: all 0.4s
                 &:hover
-                    transform: scale(1.015)
+                    transform: scale(1.0)
                     background: $blue
             p
                 text-align: justify
@@ -58,6 +58,11 @@
 @media screen and ( max-width: 1030px)
     .cardProyectos
         padding-left: 2rem
+        &:nth-child(even) 
+            padding-left: 0rem
+            padding-right: 2rem
+            img
+                order: 1
         div
             padding: 1rem
 

@@ -814,6 +814,12 @@ article #slideArticle .slideArticle3:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #slideArticle {
+    margin: 1.5rem 2rem !important;
+  }
+}
+
 .text-poppins {
   font-family: 'Poppins', 'sans-serif';
   font-size: 20px;
@@ -911,8 +917,8 @@ article #slideArticle .slideArticle3:hover {
 }
 
 .proyectos .cardProyectos div a:hover {
-  -webkit-transform: scale(1.015);
-          transform: scale(1.015);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   background: #004a9d;
 }
 
@@ -930,6 +936,15 @@ article #slideArticle .slideArticle3:hover {
 @media screen and (max-width: 1030px) {
   .cardProyectos {
     padding-left: 2rem;
+  }
+  .cardProyectos:nth-child(even) {
+    padding-left: 0rem;
+    padding-right: 2rem;
+  }
+  .cardProyectos:nth-child(even) img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .cardProyectos div {
     padding: 1rem;
