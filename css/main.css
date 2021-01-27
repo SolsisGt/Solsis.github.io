@@ -434,10 +434,6 @@ li {
   overflow: hidden;
   background: #0f0c29;
   /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#001329), color-stop(#302b63), to(#0f0c29));
-  background: linear-gradient(to top, #001329, #302b63, #0f0c29);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 57.6px;
 }
 
@@ -842,57 +838,101 @@ article #slideArticle .slideArticle3:hover {
           box-shadow: 0 12px 16px rgba(255, 255, 255, 0.1);
 }
 
-#integrantes {
-  background-color: #001329;
-  padding: 0;
-  margin: 0;
-  color: #babad6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#integrantes h2 {
+.proyectos {
   font-family: "Roboto", sans-serif;
-  font-size: 2.4rem;
-  padding: 1rem 0;
-  margin: 0rem 6rem;
-  text-align: left;
-  width: 80%;
-  border-bottom: 2.5px #ff9e01 solid;
+  color: #babad6;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+  padding-top: 57.6px;
 }
 
-#integrantes .integ {
-  margin: 2rem 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 119, 179, 0.7)), to(rgba(68, 119, 179, 0.3)));
-  background: linear-gradient(to right bottom, rgba(68, 119, 179, 0.7), rgba(68, 119, 179, 0.3));
-  border-radius: 1rem;
+.proyectos h2 {
+  margin: 1.5rem auto;
+  width: 90%;
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  display: block;
+  border-bottom: 2px #ff9e01 solid;
+  padding-bottom: 1.8rem;
+}
+
+.proyectos .cardProyectos {
+  border-radius: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #031224;
+  margin-bottom: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
-#integrantes .integ img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  margin: 0rem 3rem;
+.proyectos .cardProyectos img {
+  border-radius: 8px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.proyectos .cardProyectos img:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyectos .cardProyectos div a {
+  color: #babad6;
+  text-decoration: none;
+  bottom: 0;
+  position: relative;
+  background: #0d1824;
+  padding: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.proyectos .cardProyectos div a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.proyectos .cardProyectos div p {
+  text-align: justify;
+  padding: 0rem 1rem;
+}
+
+.proyectos .cardProyectos:nth-child(even) img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (max-width: 1030px) {
+  .cardProyectos {
+    padding-left: 2rem;
+  }
+  .cardProyectos div {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .cardProyectos {
+    display: block !important;
+    padding-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

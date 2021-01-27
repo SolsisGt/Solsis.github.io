@@ -28,7 +28,7 @@ var abrirMenu = function(){
         hamburguerYesNo = false;
         gsap.to("#menuHamburguer", {
             duration: 0.01,
-            height: 325
+            height: 262
         });
     } else {
         cerrarNav();
@@ -69,26 +69,6 @@ window.addEventListener('scroll', cerrarNav);
 
 
 
-// // // // Li del menu responsivo lleva al lugar que insica
-
-// // // Crear variables
-// var servicios = document.getElementById('servicios'),
-// contactanos = document.getElementById('contactanos'),
-// proyectos = document.getElementById('proyectos'),
-// integrantes = document.getElementById('integrantes');
-
-// // // Crear funciones
-// var irLista = function() {
-//     var nombre = this.innerHTML;
-//     var gato = "#";
-//     location.href = "#";
-//     location.href = gato + nombre.toLowerCase();
-// }
-// // // Añadir eventos y funciones
-// for (let i = 0; i < menuHamburguer.childElementCount; i++) {
-//     menuHamburguer.children[i].addEventListener('click', irLista);
-// }
-
 
 
 // // // Ubicar la flecha en su lugar cada vez que se cambie de tamaño a la pantalla
@@ -108,9 +88,7 @@ var comprobarVisibilidad = function() {
         opacitySlideArticle = styleSlideArticle.getPropertyValue('opacity');
         if (opacitySlideArticle != "0" ) {
             document.getElementsByClassName("slideArticle2")[0].style.opacity = "0.7"
-            document.getElementsByClassName("slideArticle3")[0].style.opacity = "0.7"
-            console.log('visible');
-            
+            document.getElementsByClassName("slideArticle3")[0].style.opacity = "0.7"            
         }
     }, 900);
 }
