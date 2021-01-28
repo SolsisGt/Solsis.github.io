@@ -44,6 +44,7 @@ $(document).ready(function () {
         }
         
         });
+
         $('#btn_valores').on('click', function () {
             if (btn_click_valores == false) {
                 btn_click_valores = true;
@@ -52,12 +53,8 @@ $(document).ready(function () {
             }
            
         });    
-        $('#btn1').on('click', function () {
-            alert("click");
-        });
-        $('.card').hover(function(){
-            console.log("Hola me hoveriaste");
-        });
+
+
     
 });
 

@@ -22,6 +22,22 @@ li {
   list-style: none !important;
 }
 
+.titulo {
+  margin: 1.5rem auto;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  width: 70%;
+  text-align: center;
+  display: block;
+  color: #babad6;
+  border-bottom: 2px #ff9e01 solid;
+  padding-bottom: 2rem;
+}
+
+li {
+  list-style: none !important;
+}
+
 .menu {
   position: fixed;
   width: 100%;
@@ -706,12 +722,12 @@ a {
   }
 }
 
-article #slideArticle {
+#slideArticle {
   margin: 3rem 10rem;
   position: relative;
 }
 
-article #slideArticle .slideArticle1 {
+.slideArticle1 {
   -webkit-transition: all 1s;
   transition: all 1s;
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
@@ -732,7 +748,7 @@ article #slideArticle .slideArticle1 {
           animation: 2s space infinite;
 }
 
-article #slideArticle .slideArticle2 {
+.slideArticle2 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -747,7 +763,7 @@ article #slideArticle .slideArticle2 {
   opacity: 0;
 }
 
-article #slideArticle .slideArticle2:hover {
+.slideArticle2:hover {
   -webkit-transform: translateY(-55%);
           transform: translateY(-55%);
   -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
@@ -755,7 +771,7 @@ article #slideArticle .slideArticle2:hover {
   opacity: 1 !important;
 }
 
-article #slideArticle .slideArticle3 {
+.slideArticle3 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -770,7 +786,7 @@ article #slideArticle .slideArticle3 {
   opacity: 0;
 }
 
-article #slideArticle .slideArticle3:hover {
+.slideArticle3:hover {
   -webkit-transform: translateY(-55%);
           transform: translateY(-55%);
   -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
@@ -832,6 +848,21 @@ article #slideArticle .slideArticle3:hover {
           flex: 1 250px;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.btn-card {
+  width: 98% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img_tutorias {
+  height: 250px !important;
+}
+
+.fondo_logo_card {
+  background-color: #ffffff00 !important;
 }
 
 .btn-compra {
