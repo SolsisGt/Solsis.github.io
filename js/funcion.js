@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("jquey is working");
     let flag = false;
     let btn_click_mision = false;
     let btn_click_vision = false;
@@ -53,6 +52,8 @@ $(document).ready(function () {
             }
            
         });    
+
+        
 
 
     

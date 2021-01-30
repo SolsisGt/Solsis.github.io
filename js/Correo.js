@@ -1,5 +1,4 @@
 $('document').ready(function () {
-    console.log('jquery mail working');
     $('#frm_mail').submit(function (e) {
         const postData = {
             nombre: $('#nombre').val(),
